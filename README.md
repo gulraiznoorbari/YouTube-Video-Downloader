@@ -1,10 +1,10 @@
 <div align="center">
-    <h1>Youtube Video Downloader</h1>
-    <h4>Download youtube videos in different resolutions and even in Audio format !</h4>
+<h1>Youtube Video Downloader</h1>
+<h4>Download youtube videos in different resolutions and even in Audio format !</h4>
     
 <img src="demo.png">    
 <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django." /></a>
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 </div>
 
 ## Installation steps
