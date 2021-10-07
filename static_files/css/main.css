@@ -7,11 +7,11 @@ body {
 }
 
 .background {
-  background: url("https://cdn.pixabay.com/photo/2017/03/25/17/56/color-2174052__340.png");
+  background: url("https://cdn.pixabay.com/photo/2017/03/25/17/56/color-2174052_960_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .btn:hover {
@@ -27,7 +27,7 @@ p {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  padding-top: 7%;
+  padding-top: 5%;
   font-family: "CircularStd", sans-serif;
 }
 
@@ -156,20 +156,21 @@ th {
   display: none;
 }
 
+@media screen and (max-width: 400px) {
+  .dbox,
+  .downloads {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .background {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .v-title{
-    font-size: 20px;
   }
   .dbox,
   .downloads {
-    padding: 2px;
-    /* padding-right: 10px; */
-    /* padding-left: 10px; */
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .dbox > .img-thumb > img {
     width: 100% !important;
