@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+<div class="background">
+    <div class="title">
+        <i class="fab fa-youtube"></i>
+        <p>YouTube Video Downloader</p>
+    </div>
+
+    <div class="content">
+        <form action="" method="post">
+            {% csrf_token %} {{ form|crispy }}
+            <input type="submit" value="Download" class="btn btn-info btn-block">
+        </form>
+    </div>
+</div>
+
+{% if title %}
+<div class="dbox">
+    <div class="img-thumb">
+        <img class="img-responsive" src="{{ thumbnail }}">
+    </div>
+    <div id="desl" class="v-about">
+        <p class="v-title">{{ title }}</p>
+        <p class="channel-name">Channel Name: <b>{{ channel }}</b></p>
+        <section class="infos">
+
+            <li>Duration: <b>{{ duration }}</b></li>
+            <li>Views: <b>{{ views }}</b></li>
+            <li>Likes: <b>{{ likes }}</b></li>
+            <li>Dislikes: <b>{{ dislikes }}</b</li>
+
+        </section>
+    </div>
+</div>
+
+<div id="m-show">
+    <p class="v-title">{{ title }}</p>
+</div>
+<div class="downloads">
+
+    <table>
+        <tr>
+            <th scope="col">Resolution</th>
+            <th scope="col">File Size</th>
+            <th scope="col">Extension</th>
+            <th scope="col">Download</th>
+        </tr>
+        <tr>
+            {% for stream in streams %}
+                <tr>
+                    <td>{{ stream.resolution }}</td>
+                    <td>{{ stream.file_size }}</td>
+                    <td>{{ stream.extension }}</td>
+                    <td><a href="{{ stream.video_url }}" style="text-decoration: none;"
+                            download="{{ title }}.{{ extension }}" target="_blank">Download <i
+                            class=" fa fa-download"></i></a></td>
+                </tr>
+            {% endfor %}
+        </tr>
+    </table>
+</div>
+
+
+    {% endif %}
+
+
+{% endblock %}
