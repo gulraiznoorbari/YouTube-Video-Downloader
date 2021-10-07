@@ -2,12 +2,7 @@
     <h1>Youtube Video Downloader</h1>
     <h4>Download youtube videos in different resolutions and even in Audio format !</h4>
     
-<img src="demo.png">
-    
-<a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django." /></a>
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
-    
+<img src="demo.png">    
 </div>
 
 ## Installation steps
