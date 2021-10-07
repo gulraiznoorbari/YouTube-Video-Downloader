@@ -156,11 +156,20 @@ th {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .v-title{
+    font-size: 20px;
+  }
   .dbox,
   .downloads {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 2px;
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
   }
   .dbox > .img-thumb > img {
     width: 100% !important;
