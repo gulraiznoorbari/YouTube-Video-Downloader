@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9@il6t89ms9=3r#^zma7zgi*j33ue=u*@mtbvokq!=!(j_$3tt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["yt-vid-downloader.herokuapp.com"]
 
 # Application definition
 
